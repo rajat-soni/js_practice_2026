@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .block-elm {
+    
+            border: 5px solid cadetblue;
+            height: 200px;
+            width:700px;
+           
+            padding: 20px;
+            margin-top: 40px;
+            box-sizing: border-box;    
+            margin-bottom: 20px;
+    
+        }
+        
+         /* #dabba2 {
+            margin-top:10px;
+           border: 2px solid rosybrown; 
+              padding: 10px;
+               height: 200px;
+               width:700px;
+               box-sizing: border-box;
+        } */
+
+        .dabba3-inline {
+       
+            box-sizing: border-box;
+             border: 2px solid rosybrown; 
+             padding: 10px;
+             height: 200px;
+             width:700px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class = "block-elm">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+
+    <div class = "block-elm">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+     <div class = "block-elm">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+
+    <span class="dabba3-inline">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    </span>
+
+     <span class="dabba3-inline">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    </span>
+
+     <span class="dabba3-inline">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    </span>
+</body>
+</html>
