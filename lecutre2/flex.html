@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex property</title>
+
+    <style>
+        .container {
+            border : 3px solid darkmagenta;
+            width: 100%;
+            height:auto;
+          
+            display:flex;
+            flex-direction: row;
+             /* align-items: start;  */
+            align-content: start; 
+            flex-wrap: wrap;
+            justify-content: start; 
+ /* justify-content property  row boxes  ko ya x-aixes ko center left right karta hai  
+   align-items y-axis column ko  left right center karta hai */
+
+        }
+        .flex-contaier {
+            width: 10%;
+            height:10%;
+            margin:10px;
+            padding:10px;
+           
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: lightcoral; " class="flex-contaier">Flex Item 1</div>
+        <div style="background-color: lightgreen; " class="flex-contaier">Flex Item 2</div>
+        <div style="background-color: lightblue; " class="flex-contaier">Flex Item 3</div>
+        <div style="background-color: lightblue; " class="flex-contaier">Flex Item 3</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Navbar</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3c3939;
+        padding: 0px 22px;
+        height: 60px;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .mean-links {
+        text-decoration: none;
+        color: #efefef;
+        margin: 0px 10px;
+        font-size: 18px;
+      }
+      .mean-links:hover {
+        color: crimson;
+      }
+
+      .logo-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: crimson;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .nav-links {
+        display: flex;
+        text-decoration: none;
+        color: #efefef;
+        font-size: 18px;
+        background-color: crimson;
+        padding: 6px 12px;
+        font-weight: 900;
+        border-radius: 4px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .inner-menu {
+          display: none;
+        }
+        .inner-menu {
+            flex-direction: column;
+        }
+
+        .logo-links {
+            font-size: 18px;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="" class="logo-links">Demo Navbar</a>
+      <div class="inner-menu">
+        <a href="" class="mean-links">Home</a>
+        <a href="" class="mean-links">About</a>
+        <a href="" class="mean-links">Contact</a>
+        <a href="" class="mean-links">Gallary</a>
+      </div>
+      <a href="" class="nav-links">Login </a>
+    </div>
+  </body>
+</html>

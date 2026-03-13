@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid system</title>
+    <style>
+        .screen {
+         width:  90vw;
+         height: 90vh;
+         border: 4px solid blue;
+         padding: 10px;
+         display: grid;
+         grid-template-columns: 300px 500px;
+
+
+        }
+        .componenet {
+            /* width: 500px; */
+            height: 200px;
+            border: 2px solid black;
+            margin:10px;
+            text-align: center;
+        }
+        .item-5 {
+            background-color: red;
+            grid-row: 1/2;
+            grid-column: 1/1;
+        }
+        .item-2 {
+            background-color: green;
+            grid-row: 1/2;
+            grid-column: 1/4;
+            text-align: center;
+        }
+        .item-3 {
+            background-color: yellowgreen;
+            grid-row: 2/2;
+            grid-column: 2/4;
+            text-align: center;
+        }
+
+
+
+        .screen1 {
+        
+         border: 4px solid blue;
+         padding: 10px;
+         display: grid;
+         margin-top: 500px;
+         grid-template-columns: 300px 300px ;
+            grid-template-rows: 200px 200px 300px ;
+
+
+        }
+
+        .componenet-grid {
+           /* width:300px; */
+           height: 200px;
+            margin:5px;
+          
+            border: 2px solid black;
+          
+            text-align: center;
+        }
+        .one {
+            background-color: red;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            margin-top:40px;
+        }
+        .five {
+            background-color: green;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="screen">
+        <div class="componenet item">1</div>
+        <div class="componenet item-2">Sofa</div>
+        <div class="componenet item-3">thired</div>
+        <div class="componenet item">4</div>
+        <div class="componenet item-5">bed</div>
+        <div class="componenet item">6</div>
+    </div> -->
+
+     <div class="screen1">
+        <!-- <div class="componenet-grid one">first</div>
+        <div class="componenet-grid">second</div>
+        <div class="componenet-grid">third</div>
+        <div class="componenet-grid">fourth</div>
+        <div class="componenet-grid five">fifth</div>
+        <div class="componenet-grid">sixth</div> -->
+    </div>
+</body>
+</html>

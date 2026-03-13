@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            border: 3px solid blueviolet;
+            background-color: cadetblue;
+            padding:10px;
+            height: 200px;
+           
+        }
+
+        #box1 {
+
+            border: 2px soild aquamarine;
+            background-color: lightblue;
+            font-size: x-large;
+            width: 50%;
+            height: 50px;
+
+        }
+
+        #discription {
+            border: 2px soild darkorange;
+            background-color: lightslategray;
+            width: 200px;
+            height:100px;
+            margin-top:10px;
+            overflow: auto;
+        }
+
+        .contianer-1 {
+           border: 2px solid lightcoral;
+           width: 70vw;
+           height: 50vh;
+           margin-top: 30px;
+        }
+
+        img {
+          width: 100%;
+           height: 100%;
+           object-fit: cover;
+        }
+
+         .main-div-em {
+
+           border: 2px solid plum;
+           width: 200px;
+           height: 100px;
+           font-size: 20px;
+           margin-top:40px;
+
+         }
+         .child-em {
+          font-size: 1em;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <section id = "box1">
+               
+        </section>
+        <section id = "discription">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur similique tempore reprehenderit, autem laudantium fugit ipsam labore tenetur accusantium impedit deleniti consectetur nesciunt asperiores illo est, iusto earum, unde sequi?
+        </section>
+        <section id = "box3"></section>
+    </div>
+
+    <div class="contianer-1">
+        <img src = "https://images.unsplash.com/photo-1761839257046-84e95464cc52?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt = "img not found."/>
+    </div>
+
+    <div class="main-div-em">
+        i am parent text 
+        <section class="child-em">
+            i am child text
+        </section>
+    </div>
+</body>
+</html>

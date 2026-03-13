@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation properties</title>
+</head>
+<style>
+    /* .box {
+        width:200px;
+        height:200px;
+        background-color: crimson;
+        border-right: 2px solid;
+        border-left: 2px solid;
+        border-top: 2px solid;
+        overflow: auto;
+         transition-duration: 1s; 
+        /* transition-property: box-shadow; */
+         /* transition-property: box-shadow,background-color; */
+    /* } */
+    /* .box:hover {
+
+        width:300px;
+        height:300px;
+        border:2px solid green;
+        background-color: azure;
+        box-shadow:  30px 30px  chocolate;
+        margin-top: 30px;
+    }  */
+
+
+
+    /* .parent {
+      width:100%;
+      height: 100%;
+      
+      margin-top:40px;
+     
+    
+
+      
+    } */
+    .child {
+        border: 2px solid cornflowerblue;
+        margin: 10px;
+        width:200px;
+        height:100px;
+        background-color: red;
+      transition-duration: 2s;
+
+        
+    }
+
+    .parent:hover .child {
+    width:100vw;
+    } 
+    
+
+    .child {
+    
+      
+    }
+      #chlid1 {
+
+    
+      background-color: cadetblue;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+
+      
+    }
+     #chlid2 {
+
+   background-color: chartreuse;
+   transition-timing-function: ease-in;
+   transition-delay: 2s;
+  
+    }
+     #chlid3 {
+   background-color: chocolate;
+   transition-timing-function:ease-out;
+   transition-delay: 3s;
+
+
+
+    }
+     #chlid4 {
+    background-color: cyan;
+    transition-timing-function: ease-in-out;
+    transition-delay: 4s;
+
+
+    }
+    /* .class5 {
+   background-color: cornflowerblue;
+   transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    } */
+
+     .button-glow {
+        background-color: coral;
+        border: 2px solid;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition:all 0.3s ease-in-out;
+        border-radius: 5px;;
+    }
+    .button-glow:hover {
+        background-color: black;
+        color: #fff;
+        box-shadow: 0 0 10px black, 0 0 20px black
+    }
+
+    body {
+      background-color: blanchedalmond;
+    }
+
+</style>
+<body>
+    <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et sed placeat dolor ducimus ab nulla facere, fugiat dolorem, a omnis necessitatibus itaque iure recusandae. Quasi culpa facere possimus aperiam voluptatibus?</div>
+
+    <div class="parent">
+        <div class="child" id="chlid">class</div>
+        <div class="child" id="chlid1">Lenier</div>
+        <div class="child" id="chlid2">ease in</div>
+        <div class="child" id="chlid3">ease out</div>
+        <div class="child" id="chlid4">ease in-out</div>
+          <!-- <div class="child" id="chlid5">cubic</div> -->
+    </div>
+
+    <button class="button-glow">Button Submit</button>
+</body>
+</html>

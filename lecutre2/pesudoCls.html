@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo Classes</title>
+    <style>
+        .container {
+            background-color: lightblue;
+            border: 2px solid lightcoral;
+            padding: 20px;
+        }
+
+        .container:hover {
+            background-color: antiquewhite;
+        }
+
+        input:focus {
+            background-color: lightcoral;
+            height:2rem;
+            width: 40rem;
+        }
+        /* input:hover {
+            background-color: lightgreen;
+        } */
+
+        input[type="submit"]:hover {
+            background-color: lightgreen;
+            height:2rem;
+            width: 5rem;
+            border-radius: 10px;
+        }
+
+        p:hover {
+            font-size: x-large;
+            text-shadow: 2px 2px 5px lightcoral;
+        }
+        li:nth-child(2) {
+            background-color: lightcoral;
+            height: 2rem;
+            width: 10rem;
+            margin-top: 10px;
+        }
+
+        li:first-child {
+            background-color: lightgreen;
+            height: 2rem;
+            width: 10rem;
+            font-style: italic;
+        }   
+
+        li:nth-child(4){
+            background-color: brown;
+            height: 2rem;       
+            width: 10rem;
+        }
+
+         li:nth-child(6){
+            background-color: lightgreen;
+            height: 2rem;
+            width: 10rem;
+        }
+        li:nth-child(5){
+            background-color: lightcoral;
+            height: 2rem;
+            width: 10rem;
+            font-style: italic;
+        }
+
+      p::first-letter {
+        font-size: 5rem;
+        color: lightcoral;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-div-em">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+
+        <ul>
+            <li>Rajat</li>
+            <li>MOhan</li>
+            <li>miss mohan</li>
+             <li>miss mohan1</li>
+              <li>miss mohan2</li>
+               <li>miss mohan3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+</body>
+</html>
+
+<!-- //https://upskill.tutedude.com/course/lecture-mernstack -->

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        #container {
+            border: 3px solid blueviolet;
+            padding:10px;
+           
+        }
+
+         .positioned-element {
+            width: 200px;
+            height: 170px;
+            border: 1px solid #000;
+            margin: 10px;
+            /* display: inline-block; */
+            overflow: auto;
+           
+         }
+         #box1 {
+             overflow: auto;
+              
+position: sticky;
+                top: 10px;
+
+            
+            
+         }
+
+         #box2 {
+             overflow: auto;
+               
+        
+             /* left: 40px; */
+         }
+         
+         .img {
+            height: 150px;
+            width:180px;
+            /* margin: 10px; */
+         }
+         .vedio {
+            height: 150px;
+            width:180px;
+            margin: 10px;
+         }
+         .iframeClass {
+            height: 150px;
+            width:180px;
+           
+         }
+
+            .second-div {
+                height: 1000px;
+                width: 100%;
+                background-color: lightgray;
+                margin-top:50px;
+            }
+            #box3 {
+                
+            }
+            #box5 {
+                position: fixed;
+                top: 10px;
+            }
+
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <section class="positioned-element" id = "box1">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat autem dignissimos mollitia nobis blanditiis rerum obcaecati, explicabo quis magnam laboriosam at officia, neque repellendus eligendi impedit amet totam vitae ipsam repudiandae facere dicta doloremque nihil! Accusantium et laborum culpa maxime dolor error qui optio explicabo, deleniti accusamus dignissimos sint nesciunt animi. Fugiat ut, aspernatur provident magni reiciendis amet laudantium. Voluptatem sint mollitia qui nam incidunt quis esse molestias illo veniam temporibus ex, non, porro necessitatibus tenetur dolorem beatae officiis expedita! Necessitatibus ratione voluptates sapiente quidem quia sequi eius labore consectetur veniam adipisci. Expedita voluptates sunt fuga culpa. Architecto, id nam?
+        </section>
+
+        <section class="positioned-element" id = "box2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat autem dignissimos mollitia nobis blanditiis rerum obcaecati, explicabo quis magnam laboriosam at officia, neque repellendus eligendi impedit amet totam vitae ipsam repudiandae facere dicta doloremque nihil! Accusantium et laborum culpa maxime dolor error qui optio explicabo, deleniti accusamus dignissimos sint nesciunt animi. Fugiat ut, aspernatur provident magni reiciendis amet laudantium. Voluptatem sint mollitia qui nam incidunt quis esse molestias illo veniam temporibus ex, non, porro necessitatibus tenetur dolorem beatae officiis expedita! Necessitatibus ratione voluptates sapiente quidem quia sequi eius labore consectetur veniam adipisci. Expedita voluptates sunt fuga culpa. Architecto, id nam?
+        </section>
+
+        <section class="positioned-element" id = "box3">
+            <img src = "https://images.unsplash.com/photo-1768745294197-00275e02c4f8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt = "image not found"  class="img">
+        </section>
+
+        <section class="positioned-element" id = "box4">
+           <iframe src="https://tutedude.com/category/mernstack" frameborder="0" class="iframeClass"></iframe>
+        </section>
+
+        <section class="positioned-element" id = "box5">
+         <video src="https://www.pexels.com/download/video/36145983/" controls autoplay class="vedio"></video>
+        </section>
+
+    </div>
+
+      <div class="second-div">
+
+      </div>
+</body>
+</html>
